@@ -13,7 +13,6 @@ public class StatisticsService {
         for (long income : incomes)
             if (current_max < income)
                 current_max = income;
-            else current_max = 0;
         return current_max;
     }
 }
