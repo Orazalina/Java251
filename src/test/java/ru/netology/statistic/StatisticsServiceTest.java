@@ -15,4 +15,18 @@ class StatisticsServiceTest {
 
         assertEquals(expected, actual);
     }
+
+    @org.junit.jupiter.api.Test
+    void findMax1() {
+        StatisticsService service = new StatisticsService();
+
+        long[] incomesInBillions = {5, 8, 4, 5, 3, 8, 6, 11, 10};
+        long expected = 11;
+
+        long actual = service.findMax(incomesInBillions);
+
+        assertEquals(expected, actual);
+    }
+
+
 }
